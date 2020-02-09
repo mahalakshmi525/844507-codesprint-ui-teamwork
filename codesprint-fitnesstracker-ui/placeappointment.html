@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>miniproject</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body class="container" style="background:linear-gradient(to bottom, #ffffff 23%, #669999 100%)";>
+        <div class="row">
+            <div class="col-sm">
+                <div class="d-flex justify-content-start">
+                    <img src="logo.jpg" class="rounded-circle" alt="profile" height="100px" width="100px" >
+                </div>
+            </div>
+        </div>    
+            <div class="row mt-3">
+                <div class="col-sm">
+                    <nav>
+                        <ul class="nav nav-pills justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link btn-primary" href="index.html">HOME</a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link btn-warning" href="placeappointment.html">PLACE APPOINTMENT</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link btn-secondary" href="Viewappointment.html">VIEW APPOINTMENT</a>
+                          </li>
+                           <li class="nav-item">
+                               <a class="nav-link btn-info" href="contactus.html">CONTACT US</a>
+                           </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <aside class="col-sm-3 mt-5 mr-5">
+                    <nav>
+                        <ul class="nav flex-column justify-content-start">
+                            <li class="nav-item">
+                                <a class="nav-link btn-info" href="index.html">HOME</a>
+                            </li>
+                            <br>
+                           <li class="nav-item">
+                                <a class="nav-link btn-info" href="placeappointment.html">PLACE APPOINTMENT</a>
+                          </li>
+                          <br>
+                          <li class="nav-item">
+                                <a class="nav-link btn-info" href="Viewappointment.html">VIEW APPOINTMENT</a>
+                          </li>
+                          <br>
+                           <li class="nav-item">
+                               <a class="nav-link btn-info" href="contactus.html">CONTACT US</a>
+                           </li>
+                        </ul>
+                    </nav>
+                </aside>  
+          <div class="col-sm" >
+           <form>
+             <div class="row mt-3 form-group">
+               <div class="col-sm-6 " >
+                  <label>First Name</label>
+                  <input type="text" id="fname" placeholder="Enter First Name Here.." class="form-control" autofocus required>
+                </div>
+                <div class="col-sm-6 ">
+                  <label>Last Name</label>
+                  <input type="text" id="lname"placeholder="Enter Last Name Here.." class="form-control" required>
+                </div>
+              </div>
+      
+              <div class="row mt-3 form-group">
+                <div class="col-sm ">
+                  <label>Age</label>
+                  <input type="number" id="age" placeholder="Enter Age Here.." class="form-control" required>
+               </div>		
+               <div class="col-sm ">
+                  <label>Email Address</label>
+                  <input type="text" id="email" placeholder="Enter Email Address Here.." class="form-control" required>
+               </div>	
+              </div>
+              <div class="row">
+               <div class="col-sm form-group">
+                  <label>Phone number</label>
+                  <input  type="text" id="first" size="1" maxlength="1" />     
+                  <input type="text" id="second" size="1" maxlength="1" autofocus/>
+                  <input type="text" id="third" size="1" maxlength="1"  autofocus />
+                  <input type="text" id="fourth" size="1" maxlength="1" autofocus/> 
+                  <input type="text" id="fifth" size="1" maxlength="1" autofocus/>     
+                  <input type="text" id="sixth" size="1" maxlength="1" autofocus/>
+                  <input type="text" id="seventh" size="1" maxlength="1" autofocus/>
+                  <input type="text" id="eight" size="1" maxlength="1" autofocus/> 
+                  <input type="text" id="ninth" size="1" maxlength="1" autofocus/>
+                  <input type="text" id="tenth" size="1" maxlength="1" autofocus/>
+               </div>		
+             </div>	
+      
+            <fieldset>
+                <legend>Address:</legend>	
+                <div class="form-group">
+                    <label>Street Address</label>
+                    <input placeholder="Enter Address Here.." rows="3" id="street" class="form-control">
+                </div>	
+                <div class="row form-group">
+                  <div class="col-sm-4 ">
+                      <label>City</label>
+                      <input type="text" id="city" placeholder="Enter City Name Here.." class="form-control">
+                  </div>	
+                  <div class="col-sm-4">
+                      <label>State</label>
+                      <input type="text" id="state" placeholder="Enter State Name Here.." class="form-control">
+                  </div>	
+                  <div class="col-sm-4">
+                      <label>Country</label>
+                      <input type="text" id="country" placeholder="Enter Country Here.." class="form-control">
+                  </div>	
+                </div>  	
+                <div class="row form-group">
+                  <div class=" col-sm-11 ">
+                      <label>Pincode</label>
+                      <input type="text" id="pcode" placeholder="Enter Pincode Here.." class="form-control ">
+                  </div>	
+               </div>
+            </fieldset>
+      
+             <div class="row">
+                 <div class="col">
+                    <label>Trainer Preference:</label><br>
+                  <input type="radio" id="male"     name="gender" value="male" onclick="funM()"> Male Trainer<br>
+                  <input type="radio" id="female"   name="gender" value="female" onclick="funF()"> Female Trainer<br>
+                  <input type="radio" id="none"     name="gender"   value="Nopreference" onclick="funN()"> No preference<br>
+                  <input type="radio" id="Tname"    name="Trainername" value="Trainername" >Trainer name <input type="text" id="Tn" name="Trainername" disabled="disabled"/> <br>
+                  <input type="radio" name="Others"  id=" Others" value="other" >Others <input type="text" id="Ot" name="Others" disabled="disabled"/>  <br>
+                 </div>
+             </div>
+      
+              <div class="row mt-3">
+                  <label>Do you need physiotherapist</label>
+                  <div class="col-sm">
+                   
+                       <label class="checkbox-inline">
+                         <input type="radio" value="Yes" name="radio">Yes
+                       </label>
+                       <label class="checkbox-inline">
+                          <input type="radio" value="No" name="radio">No
+                       </label>
+                  
+                  </div>
+              </div>				
+      
+             <div class="row mt-3 "style="border: 1px solid black;">
+               <table class="table table-hover" >
+                  <thead>
+                    <tr >
+                      <th scope="col">DAY</th>
+                      <th scope="col">7am-9am</th>
+                      <th scope="col">9am-11am</th>
+                      <th scope="col">11am-1pm</th>
+                       <th scope="col">1pm-3pm</th>
+                        <th scope="col">3pm-5pm</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Monday</th>
+                      <td><input type="radio" name="Monday"></td>
+                      <td><input type="radio" name="Monday"></td>
+                      <td><input type="radio" name="Monday"></td>
+                      <td><input type="radio" name="Monday"></td>
+                      <td><input type="radio" name="Monday"></td>
+                    </tr>
+                
+                    <tr>
+                      <th scope="row">Tuesday</th>
+                      <td><input type="radio" name="Tuesday"></td>
+                      <td><input type="radio" name="Tuesday"></td>
+                      <td><input type="radio" name="Tuesday"></td>
+                      <td><input type="radio" name="Tuesday"></td>
+                      <td><input type="radio" name="Tuesday"></td>
+                    </tr>
+                
+                    <tr>
+                      <th scope="row">Wednesday</th>
+                      <td><input type="radio" name="Wednesday"></td>
+                      <td><input type="radio" name="Wednesday"></td>
+                      <td><input type="radio" name="Wednesday"></td>
+                      <td><input type="radio" name="Wednesday"></td>
+                      <td><input type="radio" name="Wednesday"></td>
+                      
+                    </tr>
+                
+                    <tr>
+                      <th scope="row">Thursday</th>
+                      <td><input type="radio" name="Thursday"></td>
+                      <td><input type="radio" name="Thursday"></td>
+                      <td><input type="radio" name="Thursday"></td>
+                      <td><input type="radio" name="Thursday"></td>
+                      <td><input type="radio" name="Thursday"></td> 
+                    </tr>
+                
+                    <tr>
+                      <th scope="row">Friday</th>
+                      <td><input type="radio" name="Friday"></td>
+                      <td><input type="radio" name="Friday"></td>
+                      <td><input type="radio" name="Friday"></td>
+                      <td><input type="radio" name="Friday"></td>
+                      <td><input type="radio" name="Friday"></td> 
+                    </tr>
+                
+                    <tr>
+                      <th scope="row">Satudrday</th>
+                      <td><input type="radio" name="Satudrday"></td>
+                      <td><input type="radio" name="Satudrday"></td>
+                      <td><input type="radio" name="Satudrday"></td>
+                      <td><input type="radio" name="Satudrday"></td>
+                      <td><input type="radio" name="Satudrday"></td>
+                    </tr>
+                
+                    <tr>
+                      <th scope="row">Sunday</th>
+                      <td><input type="radio" name="Sunday"></td>
+                      <td><input type="radio" name="Sunday"></td>
+                      <td><input type="radio" name="Sunday"></td>
+                      <td><input type="radio" name="Sunday"></td>
+                      <td><input type="radio" name="Sunday"></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+      
+              <div class="row">
+                <div class="col ">
+                    <div class="row mt-3">Select a package:</div>
+                       <div class="row ">
+                              <label name="select package"></label>
+                        </div>
+                        
+                            <input type="radio" id="pack1" name="select package" value="500" onclick="packM()"> one time assessment only(INR 500) <br>
+                         
+                              <input type="radio" id="pack2"  name="select package" value="400" onclick="packF()"> 4 weekly sessionsweekly(INR 400/session)<br>
+                          
+                              <input type="radio" id="pack3" name="select package" value="300" onclick="packT()"/> 12 weekly seessions(INR 300/session)<br>
+                          
+                              <input type="radio" id="msg1" name="select package"  onclick="other()"/> others <input type="text" id="msg" readonly />
+                          
+                  </div>
+              </div>
+                          <div class="row"> Quote:</div> 
+                            <div class="col">	           
+                           <div class="row">
+                            INR<input type="text" id="total"  size="1" maxlength="1" autofocus readonly/>   paise<input type="text" id="val"  size="1" maxlength="1" autofocus readonly/>
+                          </div>
+                        </div><br/>
+                        <div class="col">	 
+                          <div class="row">
+                            <input type="button" value="submit" class="btn btn-primary" onclick="fun()">
+                          </div>
+                    </div>
+                  </form>
+                  </div>
+              </div>
+        <script src="pro.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>
